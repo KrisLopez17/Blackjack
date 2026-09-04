@@ -41,3 +41,13 @@ typedef struct {
 
 int card_value(Card card);
 void print_card(Card card);
+
+//step 2: build the deck
+
+#define CARDS_PER_DECK 52
+
+typedef struct {
+    Card *cards;
+    int size;
+    int top;
+} Deck;
