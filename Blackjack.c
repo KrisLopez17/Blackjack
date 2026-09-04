@@ -51,3 +51,9 @@ typedef struct {
     int size;
     int top;
 } Deck;
+
+//step 3: configurable number of decks
+
+
+
+//step 4: build the hand
