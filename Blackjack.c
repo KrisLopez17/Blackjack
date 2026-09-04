@@ -52,8 +52,26 @@ typedef struct {
     int top;
 } Deck;
 
+Deck *create_deck(int number_of_decks);
+void shuffle_deck(Deck *deck);
+Card deal_card(Deck *deck);
+void destroy_deck(Deck *deck);
+
 //step 3: configurable number of decks
 
-
+./blackjack 1
+./blackjack 6
 
 //step 4: build the hand
+
+#define MAX_HAND_SIZE 12
+
+typedef struct {
+    Card cards[MAX_HAND_SIZE];
+    int count;
+} Hand;
+
+void add_card(Hand *hand, Card card);
+int hand_value(const Hand *hand);
+int is_blackjack(const Hand *hand);
+int is_bust(const Hand *hand);
