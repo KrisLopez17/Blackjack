@@ -5,9 +5,16 @@
 
 #include <stdio.h>
 
-int main(){
-    return 0
+void play_game(void);
+void player_turn(Hand *player, Deck *deck);
+void dealer_turn(Hand *dealer, Deck *deck);
+
+int main(void)
+{
+    play_game();
+    return 0;
 }
+
 
 //step 1: create a card
 
